@@ -2,12 +2,16 @@ window.addEventListener("load", loaded);
 
 function loaded() {
 
-    //let buttonGetFriends = document.getElementById('');
-   // buttonGetFriends.addEventListener("click", handleGetFriends);
+    let buttonGetFriends = document.getElementById('');
+    buttonGetFriends.addEventListener("click", handleGetFriends);
 
     let buttonPost = document.getElementById('buttonPostPerson');
     buttonPost.addEventListener("click", handlePostPerson);
 
+}
+
+function ha() {
+    
 }
 
 function handlePostPerson() {
