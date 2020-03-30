@@ -4,14 +4,16 @@
       "id": 1,
       "name": "sofie",
       "friends": [
-        2
+        2,
+        6
       ]
     },
     {
       "id": 2,
       "name": "tim",
       "friends": [
-        1
+        1,
+        4
       ]
     },
     {
@@ -21,13 +23,42 @@
     },
     {
       "name": "test",
-      "friends": [],
+      "friends": [
+        5,
+        1,
+        3
+      ],
       "id": 4
     },
     {
       "name": "jan",
       "friends": [],
       "id": 5
+    },
+    {
+      "name": "ron",
+      "friends": [],
+      "id": 6
+    },
+    {
+      "name": "ron",
+      "friends": [],
+      "id": 7
+    },
+    {
+      "name": "jon",
+      "friends": [],
+      "id": 8
+    },
+    {
+      "name": "hanna",
+      "friends": [],
+      "id": 9
+    },
+    {
+      "name": "j",
+      "friends": [],
+      "id": 10
     }
   ]
 }

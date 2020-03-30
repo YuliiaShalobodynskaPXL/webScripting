@@ -19,7 +19,7 @@ function loaded() {
             let select = makeSelect(persons);
             divSelect.appendChild(select);
 
-            let buttonGetFriends = document.getElementById('');
+            let buttonGetFriends = document.getElementById('buttonGetFriends');
             buttonGetFriends.addEventListener("click", handleGetFriends);
 
             let buttonPost = document.getElementById('buttonPostPerson');
@@ -46,7 +46,7 @@ function handleGetFriends() {
     //let person = {name: name, friends: friends};
     makeElementEmpty(output);
 
-    fetch(url + 1)
+    fetch(url + id)
         .then((response) =>{
             if (response.status ===200){
                 return response.json();
@@ -60,7 +60,7 @@ function handleGetFriends() {
         })
         .then((friends) =>{
             let friendsIds = friends.join(":id=");
-            //makeSelect(output);                       check
+            makeSelect(output);
             return fetch(url + `?id=${friendsIds}`);
         })
         .then((response) =>{
@@ -128,7 +128,6 @@ function makeElementEmpty(element) {
 }
 
 
-///
 function makeTable(matrix) {
     let table = document.createElement("table");
     for (let i = 0; i < matrix.length; i++) {
@@ -143,12 +142,11 @@ function makeTable(matrix) {
     return table;
 }
 
-function makeSelect(person) {
+
+function makeSelect(persons) {
     let select = document.createElement('select');
     select.setAttribute('id', 'select_id');
     for (let person of persons) {
-        // per persoon wordt een option aangemaakt
-        //let option=makeOption(person ,select);
         makeOption(person,select);
     }
     return select;
