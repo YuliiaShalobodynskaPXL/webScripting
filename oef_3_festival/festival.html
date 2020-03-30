@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Festival</title>
 </head>
-<body>
-$END$
+
+    <button id="get_all">get all performances</button>
+    <br/><br/>
+
+    <button id="get_all_date">get all performances for this date</button>
+    <label>datum :</label>
+    <input id="get_by_date" placeholder="dd/mm/yyyy"/>
+    <br/><br/>
+
+    <button id="get_by_id">get  performance</button>
+    <label>id :</label>
+    <input id="performance_id"/>
+    <br/><br/>
+
+    <button id="post">post performance</button>
+    <label>name :</label>
+    <input id="post_name"/>
+    <label>datum :</label>
+    <input id="post_date" placeholder="dd/mm/yyyy"/>
+    omschrijving:
+    <input id="post_omschrijving"/>
+    <br/><br/>
+
+    <div id="div_output"></div>
+    <script src="assets/js/fetchFestival.js"></script>
+
 </body>
 </html>
