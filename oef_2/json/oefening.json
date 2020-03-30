@@ -23,6 +23,11 @@
       "name": "test",
       "friends": [],
       "id": 4
+    },
+    {
+      "name": "jan",
+      "friends": [],
+      "id": 5
     }
   ]
 }
